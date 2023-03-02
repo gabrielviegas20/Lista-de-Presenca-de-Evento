@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conferência de Participantes do Evento</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Conferência de Participantes do Evento</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Informações do Evento</h2>
+			<label for="data-hora">Data e Hora:</label>
+			<input type="datetime-local" id="data-hora" name="data-hora">
+
+			<label for="local">Local:</label>
+			<input type="text" id="local" name="local">
+		</section>
+
+		<section>
+			<h2>Lista de Participantes</h2>
+			
+			<label for="taxonomia">Filtrar por Taxonomia:</label>
+			<select id="taxonomia" name="taxonomia">
+				<option value="todos">Todos</option>
+				<option value="cfg-ativa">CFG Ativa</option>
+				<option value="cfg-reserva">CFG Reserva</option>
+				<option value="cg">CG</option>
+			</select>
+
+			<div class='botao_exportar'>
+				<button id="exportar-csv">Exportar para CSV</button>
+			</div>
+
+			<ul id="lista-participantes">
+				<li class="cfg-ativa">
+					
+				</li>
+				<li class="cfg-reserva">
+					
+				</li>
+				<li class="cg">
+					
+				</li>
+			</ul>
+		</section>
+        <div class='botao_exportar'>
+		<button id="exportar-csv">Exportar para CSV</button>
+        </div>
+	</main>
+    <footer></footer>
+</body>
+</html>

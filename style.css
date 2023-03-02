@@ -1,0 +1,119 @@
+/* Estilos gerais */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #0E203D;
+	color: #fff;
+	padding: 10px;
+	box-shadow: 2px 2px 5px #999;
+}
+
+main {
+	display: flex;
+	flex-direction: column; /* adicionado para colocar a lista abaixo das informações do evento */
+}
+
+section {
+	flex: 1;
+	padding: 20px;
+}
+
+.informacoes-evento {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center; /* adicionado para alinhar verticalmente */
+}
+
+.evento-detalhes {
+	flex: 1;
+}
+
+.evento-detalhes h2 {
+	margin-top: 0;
+}
+
+/* Estilos da lista de participantes */
+#lista-participantes {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#lista-participantes li {
+	flex: 1 0 25%;
+	padding: 10px;
+}
+
+.card {
+	border: 1px solid black;
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 0px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.card img {
+	max-width: 100%;
+	height: auto;
+}
+
+.card.selecionado {
+	background-color: #f00;
+	color: #fff;
+}
+
+/* Estilos do botão de exportar */
+#exportar-csv {
+	background-color: #333;
+    width: 30%;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px #999;
+    margin-top: -20px; /* deslocar o botão um pouco para cima */
+	color: #fff;
+	padding: 10px;
+	border-radius: 20px;
+	margin-top: 20px;
+    margin-left: 35%;
+	margin-bottom: 20px;
+    text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+/* Estilos do menu lateral */
+nav {
+	background-color: #0077b6;
+	color: #fff;
+	padding: 10px;
+	width: 200px; /* adicionado para definir a largura do menu */
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	margin-bottom: 5px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+footer {
+    margin: 100px;
+}
